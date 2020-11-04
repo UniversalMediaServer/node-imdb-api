@@ -82,5 +82,5 @@ cache:
   before_script:
     - "npx ts-node test/util/server.ts &"
   script:
-    - "cd examples/imdb-api-react && npm install && npm test; cd ../.."
+    - "cd examples/imdb-api-react && yarn && yarn test; cd ../.."
     - "cd examples/imdb-api-node && npm install && node index.js; cd ../.."
